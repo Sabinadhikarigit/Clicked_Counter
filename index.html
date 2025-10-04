@@ -10,16 +10,17 @@
             margin: 10px;
             border: 1px solid black;
             border-radius: 4px;
-            cursor: pointer;
             font-size: 18px;
         }
         .clear-button {
             background-color: red;
             color: white;
+            cursor: pointer;
         }
         .click-here {
             background-color: green;
             color: white;
+            cursor: pointer;
         }
         #my-button {
             background-color: aqua;
@@ -27,11 +28,12 @@
     </style>
 </head>
 <body>
-    <button id="my-button" onclick="buttonPressed()">0</button>
+    <button id="my-button">0</button>
     <button class="click-here" onclick="buttonPressed()">Click</button>
     <button class="clear-button" onclick="clearCount()">Clear</button>
 
     <script>
+        
         let noOfTimesClicked = 0;
 
         function buttonPressed() {
